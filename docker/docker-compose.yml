@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  golang-console:
+    image: 'golang:1.18-alpine'
+    volumes:
+      - '../src:/src'
+    working_dir: /src
+    stdin_open: true
+    tty: true
+  golang:
+    image: 'golang:1.18-alpine'
+    volumes:
+      - '../src:/src'
